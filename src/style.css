@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: #d2eaf3;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    margin-top: 1.5rem;
+    font-size: 7rem;
+    font-family: "Solway", serif;
+}
+
+.container {
+    text-align: center;
+    max-width: 80rem;
+    padding: 2rem 2rem;
+    margin: 3rem auto 0;
+}
+
+.weatherSearch {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.weatherSearch label {
+     margin-top: 2rem;
+     font-size: 3rem;
+}
+
+.weatherSearch input {
+     margin-top: 1.5rem;
+     padding: 10px 12px;
+     font-size: 2rem;
+     border-radius: 5px;
+     border: 1px solid grey;
+     outline: none;
+     box-shadow: 0px 0px 2px 2px rgba(182, 182, 182, 0.226);
+}
+
+.weatherSearch button{
+     margin-top: 1.5rem;
+     padding: 8px 15px;
+     border-radius: 5px;
+     font-size: 2rem;
+     background-color: rgb(218, 218, 218);
+     border: 1px solid rgb(51, 51, 51);
+     outline: none;
+}
+
+.weatherSearch input:focus{
+     box-shadow: 0px 0px 2px 2px rgba(52, 134, 27, 0.527);
+}
+
+.cityData {
+     margin-top: 3rem;
+     background-color: rgba(255, 255, 255, 0.295);
+     border: 1px solid rgba(128, 128, 128, 0.596);
+     border-radius: 20px;     
+     padding: 2rem 1rem;
+}
+
+img {
+     display: block;
+     margin: 0 auto;
+}
+
+.cityData h1 {
+     margin: 0;
+     font-size: 5rem;
+}
+
+.cityData h2{
+     font-family: "Solway", serif;
+     font-weight: 400;
+     font-size: 3.2rem;
+}
+
+.dataGrid {
+     margin-top: 1rem;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 1rem;
+     grid-row-gap: 4rem;
+}
+
+.dataGrid h3 {
+     font-family: "Solway", serif;
+     font-size: 3rem;
+}
+
+.dataGrid p {
+     font-size: 3rem;
+     color: rgb(0, 0, 65);
+     font-weight: 600;
+}
+
+.dataGrid p .identifier{
+     margin-left: 3px;
+     color: black;
+     font-size: 2.5rem;
+     font-family: "Solway", serif;
+}
+
+.dataItem {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+}
+
+.temp {
+     display: inline-block;
+     margin-top: .5rem;
+     font-size: 5rem;
+     font-weight: 900;
+     color: rgb(0, 0, 0);
+}
