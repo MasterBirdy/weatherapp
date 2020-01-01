@@ -11,7 +11,7 @@ export default class EasyHTTP {
       if (city.includes(",")) {
         newCity = city.split(",")[0];
       }
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${this.appidWeather}`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${this.appidWeather}`)
         .then((res) => (res.ok ? res.json() : reject("Error! City was not found!")))
         .then((data) => resolve(data))
         .catch(() => reject("Error! City was not found!"));

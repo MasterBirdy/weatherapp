@@ -23,7 +23,7 @@ export default class DOMHandler {
     <h1>${cityData.name}, ${cityData.sys.country}</h1>
     <h2>Temperature</h2>
     <span class="temp">${Temperature.convert(cityData.main.temp)}<span class="temp degree">°F</span></span>
-    <img class="icon" src="http://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png" alt="${cityData.weather[0].description}">
+    <img class="icon" src="https://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png" alt="${cityData.weather[0].description}">
     </div>
     <div class="dataGrid">
       <div class="dataItem">
