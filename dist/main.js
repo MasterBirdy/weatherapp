@@ -105,9 +105,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ./background.jpg */ "./src/background.jpg");
 exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-size: 62.5%;\n}\n\nhtml,\nbody {\n    width: 100%;\n    background-color: #d2eaf3;\n    font-family: \"Lato\", sans-serif;\n}\n\nh1 {\n    margin-top: 1.5rem;\n    font-size: 7rem;\n    font-family: \"Solway\", serif;\n}\n\n.container {\n    text-align: center;\n    max-width: 80rem;\n    padding: 2rem 2rem;\n    margin: 3rem auto 0;\n}\n\n.weatherSearch {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n}\n\n.weatherSearch label {\n     margin-top: 2rem;\n     font-size: 3rem;\n}\n\n.weatherSearch input {\n     margin-top: 1.5rem;\n     padding: 10px 12px;\n     font-size: 2rem;\n     border-radius: 5px;\n     border: 1px solid grey;\n     outline: none;\n     box-shadow: 0px 0px 2px 2px rgba(182, 182, 182, 0.226);\n}\n\n.weatherSearch button{\n     margin-top: 1.5rem;\n     padding: 8px 15px;\n     border-radius: 5px;\n     font-size: 2rem;\n     background-color: rgb(218, 218, 218);\n     border: 1px solid rgb(51, 51, 51);\n     outline: none;\n}\n\n.weatherSearch input:focus{\n     box-shadow: 0px 0px 2px 2px rgba(52, 134, 27, 0.527);\n}\n\n.cityData {\n     margin-top: 3rem;\n     background-color: rgba(255, 255, 255, 0.295);\n     border: 1px solid rgba(128, 128, 128, 0.596);\n     border-radius: 20px;     \n     padding: 2rem 1rem;\n}\n\nimg {\n     display: block;\n     margin: 0 auto;\n}\n\n.cityData h1 {\n     margin: 0;\n     font-size: 5rem;\n}\n\n.cityData h2{\n     font-family: \"Solway\", serif;\n     font-weight: 400;\n     font-size: 3.2rem;\n}\n\n.dataGrid {\n     margin-top: 1rem;\n     display: grid;\n     grid-template-columns: 1fr 1fr 1fr;\n     grid-column-gap: 1rem;\n     grid-row-gap: 4rem;\n}\n\n.dataGrid h3 {\n     font-family: \"Solway\", serif;\n     font-size: 3rem;\n}\n\n.dataGrid p {\n     font-size: 3rem;\n     color: rgb(0, 0, 65);\n     font-weight: 600;\n}\n\n.dataGrid p .identifier{\n     margin-left: 3px;\n     color: black;\n     font-size: 2.5rem;\n     font-family: \"Solway\", serif;\n}\n\n.dataItem {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     justify-content: flex-start;\n}\n\n.temp {\n     display: inline-block;\n     margin-top: .5rem;\n     font-size: 5rem;\n     font-weight: 900;\n     color: rgb(0, 0, 0);\n}", ""]);
+exports.push([module.i, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-size: 62.5%;\n}\n\nhtml,\nbody {\n    width: 100%;\n    flex-direction: column;\n    background-color: #d2eaf3;\n    font-family: \"Lato\", sans-serif;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n    background-attachment: fixed;\n    background-position: 50% 65%;\n    background-size: auto 150%;\n}\n\nh1 {\n    margin-top: 1.5rem;\n    font-size: 7rem;\n    font-family: \"Solway\", serif;\n}\n\n.container {\n    text-align: center;\n    max-width: 80rem;\n    padding: 2rem 2rem 1rem;\n    margin: 3rem auto 0;\n}\n\n.weatherSearch {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n}\n\n.weatherSearch label {\n     font-family: \"Solway\", serif;\n     margin-top: 1.5rem;\n     font-size: 3.5rem;\n}\n\n.weatherSearch input {\n     margin-top: 1.5rem;\n     padding: 10px 12px;\n     font-size: 2rem;\n     border-radius: 5px;\n     border: 1px solid grey;\n     outline: none;\n     box-shadow: 0px 0px 2px 2px rgba(182, 182, 182, 0.226);\n}\n\n.weatherSearch button{\n     margin-top: 1.5rem;\n     padding: 8px 15px;\n     border-radius: 5px;\n     font-size: 2rem;\n     background-color: rgb(218, 218, 218);\n     border: 1px solid rgb(51, 51, 51);\n     outline: none;\n}\n\n.weatherSearch input:focus{\n     box-shadow: 0px 0px 2px 2px rgba(52, 134, 27, 0.527);\n}\n\n.cityData {\n     position: relative;\n     margin-top: 3rem;\n     border-radius: 20px;    \n     padding: 2rem 1rem;\n     background-color: rgba(255, 255, 255, 0.637);\n     z-index: 1;\n     text-shadow:\n     0px 0px 8px rgba(217, 234, 255, 0.822),\n     0px 0px 10px rgba(255, 255, 255, 0.74);\n}\n\n.cityDataBackground{\n     position: absolute;\n     top: 0;\n     left: 0;\n     height: 100%;\n     width: 100%;\n     content: \"\";\n     background-repeat: no-repeat;\n     background-position: center center;\n     opacity: 1;\n     z-index: -1;\n     border-radius: 20px;\n     border: 1px solid black;\n}\n\n.cityDataBackground:after{\n          position: absolute;\n          top: 0;\n          left: 0;\n          height: 100%;\n          width: 100%;\n          content: \"\";\n          background-color: rgb(151, 151, 151);\n          opacity: .3;\n          z-index: 0;\n          border-radius: 20px;\n}\n\nimg {\n     display: block;\n     margin: .5rem auto 0;\n     background-color: rgb(218, 218, 218);\n     border: 5px dashed grey;\n     border-radius: 5px;\n     box-sizing: border-box;\n}\n\n.cityData h1 {\n     margin: 0;\n     font-size: 5rem;\n}\n\n.cityData h2{\n     font-family: \"Solway\", serif;\n     font-weight: 400;\n     font-size: 3.2rem;\n}\n\n.dataGrid {\n     margin-top: 2rem;\n     display: grid;\n     grid-template-columns: 1fr 1fr 1fr;\n     grid-column-gap: 1rem;\n     grid-row-gap: 2rem;\n}\n\n.dataGrid h3 {\n     font-family: \"Solway\", serif;\n     font-size: 3rem;\n}\n\n.dataGrid p {\n     font-size: 3rem;\n     color: rgb(0, 0, 65);\n     font-weight: 600;\n}\n\n.dataGrid p .identifier{\n     margin-left: 3px;\n     color: black;\n     font-size: 2.5rem;\n     font-family: \"Solway\", serif;\n}\n\n.dataItem {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     justify-content: flex-start;\n}\n\n.temp {\n     display: inline-block;\n     margin-top: .5rem;\n     font-size: 5rem;\n     font-weight: 900;\n     color: rgb(0, 0, 0);\n}\n\n.dataGrid p.low {\n     color: rgb(0, 85, 0);\n}\n\n.dataGrid p.medium {\n     color: rgb(221, 133, 0);\n}\n\n.dataGrid p.high {\n     color: rgb(170, 0, 0);\n}\n\nfooter {\n     margin-top: .5rem;\n     text-align: center;\n}\n\nfooter p {\n     font-size: 1.4rem;\n}\n\n.photographer {\n     font-size: 1.4rem;\n}\n\n.degree {\n     color: rgb(0, 0, 65);\n     margin-left: 3px;\n     font-size: 4.8rem;\n}\n\n@media (max-width: 700px) {\n\n     h1 {\n          margin-top: 0rem;\n          font-size: 4rem;\n          font-family: \"Solway\", serif;\n      }\n\n      .container {\n           display: flex;\n           flex-direction: column;\n           margin-top: 0rem;\n           width: 100%;\n           height: 100vh;\n           padding: 1rem 1rem;\n      }\n\n      .weatherSearch label {\n          font-family: \"Solway\", serif;\n          margin-top: .5rem;\n          font-size: 3rem;\n     }\n\n     .weatherSearch input {\n          margin-top: 1.5rem;\n          padding: 8px 10px;\n          font-size: 1.8rem;\n     }\n\n      .cityData{\n           display: flex;\n           flex-direction: column;\n           justify-content: space-around;\n           align-items: center;\n           width: 100%;\n           margin-top: 1.5rem;\n           border-radius: 20px;    \n           padding: 1.5rem 1rem;\n           flex: 1 0 auto;\n      }\n\n      .cityData h1{\n           font-size: 3.5rem; \n      }\n\n     .dataGrid {\n          margin-top: 1rem;\n          grid-template-columns: 1fr 1fr;\n          grid-column-gap: .25rem;\n          grid-row-gap: 1rem;\n     }\n\n     .dataItem h3{\n          font-size: 2.25rem;\n     }\n\n     .temp {\n          margin-top: 0;\n          font-size: 3.5rem;\n     }\n\n     .icon {\n          display: none;\n     }\n\n} \n\n@media (max-width: 700px) and (min-height: 700px) {\n\n     h1{\n          font-size: 4.5rem;\n     }\n     .cityData h1{\n          font-size: 4.5rem; \n     }\n\n\n     .temp {\n\n          font-size: 4.25rem;\n     }\n\n     .dataGrid h3{\n          font-size: 2.5rem;\n     }\n     \n\n}\n\n@media (max-width: 700px) and (min-height: 800px) {\n\n\n     .temp {\n\n          font-size: 4.25rem;\n     }\n\n     .dataGrid h3{\n          font-size: 2.5rem;\n     }\n\n     .icon {\n          display: block;\n     }\n\n\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -198,6 +201,51 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -450,6 +498,39 @@ module.exports = function (moduleId, list, options) {
 
 /***/ }),
 
+/***/ "./src/ColorSeverity.js":
+/*!******************************!*\
+  !*** ./src/ColorSeverity.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ColorSeverity; });
+class ColorSeverity {
+  static formatWind(speed) {
+    if (speed < 13.9) {
+      return "low";
+    } if (speed < 20.7) {
+      return "medium";
+    }
+    return "high";
+  }
+
+  static formatHumidity(percent) {
+    if (percent < 40) {
+      return "low";
+    } if (percent < 70) {
+      return "medium";
+    }
+    return "high";
+  }
+}
+
+
+/***/ }),
+
 /***/ "./src/DOMHandler.js":
 /*!***************************!*\
   !*** ./src/DOMHandler.js ***!
@@ -461,48 +542,112 @@ module.exports = function (moduleId, list, options) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DOMHandler; });
 /* harmony import */ var _temperature_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./temperature.js */ "./src/temperature.js");
+/* harmony import */ var _timeFormatter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./timeFormatter.js */ "./src/timeFormatter.js");
+/* harmony import */ var _DirectionFormatter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DirectionFormatter.js */ "./src/DirectionFormatter.js");
+/* harmony import */ var _ColorSeverity_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ColorSeverity.js */ "./src/ColorSeverity.js");
+
+
+
 
 
 class DOMHandler {
   createCityData(cityData) {
     const cityDiv = document.querySelector(".cityData");
+    const oldFooter = document.querySelector("footer");
     if (cityDiv !== null) {
       cityDiv.remove();
     }
+    if (oldFooter !== null) {
+      oldFooter.remove();
+    }
     const div = document.createElement("div");
-    div.innerHTML = `<div class="cityData">
+    const sunRise = new Date(cityData.sys.sunrise * 1000);
+    const sunSet = new Date(cityData.sys.sunset * 1000);
+    div.className = "cityData";
+    console.log(cityData.wind.deg);
+    div.innerHTML = `
+    <div>
     <h1>${cityData.name}, ${cityData.sys.country}</h1>
     <h2>Temperature</h2>
-    <span class="temp">${_temperature_js__WEBPACK_IMPORTED_MODULE_0__["default"].convert(cityData.main.temp)}°F</span>
-    <img src="http://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png">
+    <span class="temp">${_temperature_js__WEBPACK_IMPORTED_MODULE_0__["default"].convert(cityData.main.temp)}<span class="temp degree">°F</span></span>
+    <img class="icon" src="http://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png" alt="${cityData.weather[0].description}">
+    </div>
     <div class="dataGrid">
       <div class="dataItem">
           <h3>Wind Speed</h3>
-          <p>${cityData.wind.speed}<span class="identifier">m/s</span></p>
+          <p class="${_ColorSeverity_js__WEBPACK_IMPORTED_MODULE_3__["default"].formatWind(cityData.wind.speed)}">${cityData.wind.speed}<span class="identifier">m/s</span></p>
       </div>
       <div class="dataItem">
           <h3>Wind Direction</h3>
-          <p>${cityData.wind.deg}<span class="identifier">°</span></p>
-        </div>
-        <div class="dataItem">
+          <p>${_DirectionFormatter_js__WEBPACK_IMPORTED_MODULE_2__["default"].formatDirection(parseInt(cityData.wind.deg, 10))}</p>
+      </div>
+      <div class="dataItem">
           <h3>Humidity</h3>
-          <p>${cityData.main.humidity}<span class="identifier">%</span></p>
-        </div>
-        <div class="dataItem">
+          <p class="${_ColorSeverity_js__WEBPACK_IMPORTED_MODULE_3__["default"].formatHumidity(cityData.main.humidity)}">${cityData.main.humidity}<span class="identifier">%</span></p>
+      </div>
+      <div class="dataItem">
           <h3>Cloudiness</h3>
           <p>${cityData.clouds.all}<span class="identifier">%</span></p>
-        </div>
-        <div class="dataItem">
-          <h3>Sunrise</h3>
-          <p>7:00<span class="identifier">am</span></p>
-        </div>
-        <div class="dataItem">
-          <h3>Sunset</h3>
-          <p>5:00<span class="identifier">pm</span></p>
-        </div>
       </div>
-    </div>`;
+      <div class="dataItem">
+          <h3>Sunrise</h3>
+            <p>${_timeFormatter_js__WEBPACK_IMPORTED_MODULE_1__["default"].formatHours(sunRise.getHours())}:${_timeFormatter_js__WEBPACK_IMPORTED_MODULE_1__["default"].formatMinutes(sunRise.getMinutes())}<span class="identifier">am</span></p>
+      </div>
+      <div class="dataItem">
+          <h3>Sunset</h3>
+          <p>${_timeFormatter_js__WEBPACK_IMPORTED_MODULE_1__["default"].formatHours(sunSet.getHours())}:${_timeFormatter_js__WEBPACK_IMPORTED_MODULE_1__["default"].formatMinutes(sunSet.getMinutes())}<span class="identifier">pm</span></p>
+      </div>
+      </div>
+      <div class="cityDataBackground">
+      </div>`;
     document.querySelector(".container").appendChild(div)
+    const footer = document.createElement("footer")
+    footer.innerHTML = "<p>Image by <span class='photographer'>...</span>.</p>";
+    document.querySelector(".container").appendChild(footer);
+  }
+
+  createBackgroundPicture(source, photographer) {
+    const cityData = document.querySelector(".cityDataBackground");
+    cityData.style.backgroundImage = `url(${source})`;
+    document.querySelector(".photographer").textContent = photographer;
+  }
+}
+
+
+/***/ }),
+
+/***/ "./src/DirectionFormatter.js":
+/*!***********************************!*\
+  !*** ./src/DirectionFormatter.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DirectionFormatter; });
+class DirectionFormatter {
+  static formatDirection(degree) {
+    if (degree > 0 && degree <= 22) {
+      return "N";
+    } if (degree > 22 && degree <= 67) {
+      return "NW";
+    } if (degree > 67 && degree <= 112) {
+      return "E";
+    } if (degree > 112 && degree <= 157) {
+      return "SE";
+    } if (degree > 157 && degree <= 202) {
+      return "S";
+    } if (degree > 202 && degree <= 247) {
+      return "SW";
+    } if (degree > 247 && degree <= 292) {
+      return "W";
+    } if (degree > 292 && degree <= 337) {
+      return "NW";
+    } if (degree > 337 && degree <= 360) {
+      return "N";
+    }
+    return "?";
   }
 }
 
@@ -521,20 +666,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return EasyHTTP; });
 class EasyHTTP {
   constructor() {
-    this.appid = "85f239423b6b69d35a74b80a3b91cff8";
+    this.appidWeather = "85f239423b6b69d35a74b80a3b91cff8";
+    this.appidPicture = "563492ad6f91700001000001eb7a41ead3f049018ceb18915d19b9ce";
   }
 
   // make an HTTP GET request
   httpGETCity(city) {
     return new Promise((resolve, reject) => {
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.appid}`)
+      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.appidWeather}`)
         .then((res) => (res.ok ? res.json() : reject("error")))
+        .then((data) => resolve(data))
+        .catch((err) => reject(err));
+    });
+  }
+
+  httpGETPicture(text) {
+    return new Promise((resolve, reject) => {
+      let weatherText = text;
+      if (text === "Clear") {
+        weatherText += " skies";
+      } else if (text === "Drizzle") {
+        weatherText = "Rain";
+      }
+      fetch(`https://api.pexels.com/v1/search?query=${weatherText}`, {
+        method: "GET",
+        headers: {
+          authorization: this.appidPicture
+        }
+      })
+        .then((res) => res.ok ? res.json() : reject("Picture not found!"))
         .then((data) => resolve(data))
         .catch((err) => reject(err));
     });
   }
 }
 
+
+/***/ }),
+
+/***/ "./src/background.jpg":
+/*!****************************!*\
+  !*** ./src/background.jpg ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "1dbe06205f7a996f82c87c847e2e5c12.jpg");
 
 /***/ }),
 
@@ -551,6 +730,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DOMHandler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DOMHandler */ "./src/DOMHandler.js");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _background_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./background.jpg */ "./src/background.jpg");
+
 
 
 
@@ -564,9 +745,27 @@ document.querySelector("button").addEventListener("click", () => {
     .then((data) => {
       console.log(data);
       domHandler.createCityData(data);
+      return easyHTTP.httpGETPicture(data.weather[0].main);
+    })
+    .then((data) => {
+      console.log(data);
+      const photoNumber = Math.floor(Math.random() * (data.total_results < 15 ? data.total_results : 15));
+      domHandler.createBackgroundPicture(data.photos[photoNumber].src.original, data.photos[photoNumber].photographer);
     })
     .catch((err) => console.log(err));
 });
+
+easyHTTP.httpGETCity("Anaheim")
+  .then((data) => {
+    console.log(data);
+    domHandler.createCityData(data);
+    return easyHTTP.httpGETPicture(data.weather[0].main);
+  })
+  .then((data) => {
+    console.log(data);
+    const photoNumber = Math.floor(Math.random() * (data.total_results < 15 ? data.total_results : 15));
+    domHandler.createBackgroundPicture(data.photos[photoNumber].src.original, data.photos[photoNumber].photographer);
+  });
 
 
 /***/ }),
@@ -615,6 +814,39 @@ __webpack_require__.r(__webpack_exports__);
 class Temperature {
   static convert(kelvin) {
     return ((parseFloat(kelvin) - 273.15) * (9 / 5) + 32).toFixed(1);
+  }
+}
+
+
+/***/ }),
+
+/***/ "./src/timeFormatter.js":
+/*!******************************!*\
+  !*** ./src/timeFormatter.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return TimeFormatter; });
+class TimeFormatter {
+  static formatHours(hours) {
+    if (hours === 0) {
+      return 12;
+    }
+    if (hours > 13) {
+      return hours - 12;
+    }
+
+    return hours;
+  }
+
+  static formatMinutes(minutes) {
+    if (minutes < 10) {
+      return `0${minutes}`;
+    }
+    return minutes;
   }
 }
 
