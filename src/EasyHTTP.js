@@ -7,10 +7,14 @@ export default class EasyHTTP {
   // make an HTTP GET request
   httpGETCity(city) {
     return new Promise((resolve, reject) => {
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.appidWeather}`)
-        .then((res) => (res.ok ? res.json() : reject("error")))
+      let newCity = city;
+      if (city.includes(",")) {
+        newCity = city.split(",")[0];
+      }
+      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${this.appidWeather}`)
+        .then((res) => (res.ok ? res.json() : reject("Error! City was not found!")))
         .then((data) => resolve(data))
-        .catch((err) => reject(err));
+        .catch(() => reject("Error! City was not found!"));
     });
   }
 
@@ -28,9 +32,9 @@ export default class EasyHTTP {
           authorization: this.appidPicture
         }
       })
-        .then((res) => res.ok ? res.json() : reject("Picture not found!"))
+        .then((res) => (res.ok ? res.json() : reject("Picture not found!")))
         .then((data) => resolve(data))
-        .catch((err) => reject(err));
+        .catch(() => reject("Error! Picture did not load."));
     });
   }
 }

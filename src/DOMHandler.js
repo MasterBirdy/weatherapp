@@ -1,7 +1,7 @@
 import Temperature from "./temperature.js";
 import TimeFormatter from "./timeFormatter.js";
-import DirectionFormatter from "./DirectionFormatter.js"
-import ColorSeverity from "./ColorSeverity.js"
+import DirectionFormatter from "./DirectionFormatter.js";
+import ColorSeverity from "./ColorSeverity.js";
 
 export default class DOMHandler {
   createCityData(cityData) {
@@ -19,7 +19,7 @@ export default class DOMHandler {
     div.className = "cityData";
     console.log(cityData.wind.deg);
     div.innerHTML = `
-    <div>
+    <div class="searchDiv">
     <h1>${cityData.name}, ${cityData.sys.country}</h1>
     <h2>Temperature</h2>
     <span class="temp">${Temperature.convert(cityData.main.temp)}<span class="temp degree">°F</span></span>
@@ -53,8 +53,8 @@ export default class DOMHandler {
       </div>
       <div class="cityDataBackground">
       </div>`;
-    document.querySelector(".container").appendChild(div)
-    const footer = document.createElement("footer")
+    document.querySelector(".container").appendChild(div);
+    const footer = document.createElement("footer");
     footer.innerHTML = "<p>Image by <span class='photographer'>...</span>.</p>";
     document.querySelector(".container").appendChild(footer);
   }
@@ -63,5 +63,18 @@ export default class DOMHandler {
     const cityData = document.querySelector(".cityDataBackground");
     cityData.style.backgroundImage = `url(${source})`;
     document.querySelector(".photographer").textContent = photographer;
+  }
+
+  errorHandle(message) {
+    const existingDiv = document.querySelector(".errorClass");
+    if (existingDiv !== null) {
+      existingDiv.remove();
+    }
+    const body = document.querySelector("body");
+    const errorDiv = document.createElement("div");
+    errorDiv.textContent = message;
+    errorDiv.className = "errorClass";
+    body.appendChild(errorDiv);
+    setTimeout(() => errorDiv.remove(), 3000);
   }
 }
