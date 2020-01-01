@@ -570,7 +570,7 @@ class DOMHandler {
     <h1>${cityData.name}, ${cityData.sys.country}</h1>
     <h2>Temperature</h2>
     <span class="temp">${_temperature_js__WEBPACK_IMPORTED_MODULE_0__["default"].convert(cityData.main.temp)}<span class="temp degree">°F</span></span>
-    <img class="icon" src="http://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png" alt="${cityData.weather[0].description}">
+    <img class="icon" src="https://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png" alt="${cityData.weather[0].description}">
     </div>
     <div class="dataGrid">
       <div class="dataItem">
@@ -690,7 +690,7 @@ class EasyHTTP {
       if (city.includes(",")) {
         newCity = city.split(",")[0];
       }
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${this.appidWeather}`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${this.appidWeather}`)
         .then((res) => (res.ok ? res.json() : reject("Error! City was not found!")))
         .then((data) => resolve(data))
         .catch(() => reject("Error! City was not found!"));
