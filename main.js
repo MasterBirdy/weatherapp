@@ -110,7 +110,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ./background.jpg */ 
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-size: 62.5%;\n}\n\nhtml,\nbody {\n    width: 100%;\n    flex-direction: column;\n    background-color: #d2eaf3;\n    font-family: \"Lato\", sans-serif;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n    background-attachment: fixed;\n    background-position: 50% 65%;\n    background-size: auto 150%;\n}\n\nh1 {\n    margin-top: 1.5rem;\n    font-size: 7rem;\n    font-family: \"Solway\", serif;\n}\n\n.container {\n    text-align: center;\n    max-width: 80rem;\n    padding: 2rem 2rem 1rem;\n    margin: 3rem auto 0;\n}\n\n.weatherSearch {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n}\n\n.weatherSearch label {\n     font-family: \"Solway\", serif;\n     margin-top: 1.5rem;\n     font-size: 3.5rem;\n}\n\n.weatherSearch input {\n     margin-top: 1.5rem;\n     padding: 10px 12px;\n     font-size: 2rem;\n     border-radius: 5px;\n     border: 1px solid grey;\n     outline: none;\n     box-shadow: 0px 0px 2px 2px rgba(182, 182, 182, 0.226);\n}\n\n.weatherSearch button{\n     margin-top: 1.5rem;\n     padding: 8px 15px;\n     border-radius: 5px;\n     font-size: 2rem;\n     background-color: rgb(218, 218, 218);\n     border: 1px solid rgb(51, 51, 51);\n     outline: none;\n}\n\n.weatherSearch input:focus{\n     box-shadow: 0px 0px 2px 2px rgba(52, 134, 27, 0.527);\n}\n\n.cityData {\n     position: relative;\n     margin-top: 3rem;\n     border-radius: 20px;    \n     padding: 2rem 1rem;\n     background-color: rgba(255, 255, 255, 0.637);\n     z-index: 1;\n     text-shadow:\n     0px 0px 8px rgba(217, 234, 255, 0.822),\n     0px 0px 10px rgba(255, 255, 255, 0.74);\n}\n\n.cityDataBackground{\n     position: absolute;\n     top: 0;\n     left: 0;\n     height: 100%;\n     width: 100%;\n     content: \"\";\n     background-repeat: no-repeat;\n     background-position: center center;\n     opacity: 1;\n     z-index: -1;\n     border-radius: 20px;\n     border: 1px solid black;\n}\n\n.cityDataBackground:after{\n          position: absolute;\n          top: 0;\n          left: 0;\n          height: 100%;\n          width: 100%;\n          content: \"\";\n          background-color: rgb(151, 151, 151);\n          opacity: .3;\n          z-index: 0;\n          border-radius: 20px;\n}\n\nimg {\n     display: block;\n     margin: .5rem auto 0;\n     background-color: rgb(218, 218, 218);\n     border: 5px dashed grey;\n     border-radius: 5px;\n     box-sizing: border-box;\n}\n\n.cityData h1 {\n     margin: 0;\n     font-size: 5rem;\n}\n\n.cityData h2{\n     font-family: \"Solway\", serif;\n     font-weight: 400;\n     font-size: 3.2rem;\n}\n\n.dataGrid {\n     margin-top: 2rem;\n     display: grid;\n     grid-template-columns: 1fr 1fr 1fr;\n     grid-column-gap: 1rem;\n     grid-row-gap: 2rem;\n}\n\n.dataGrid h3 {\n     font-family: \"Solway\", serif;\n     font-size: 3rem;\n}\n\n.dataGrid p {\n     font-size: 3rem;\n     color: rgb(0, 0, 65);\n     font-weight: 600;\n}\n\n.dataGrid p .identifier{\n     margin-left: 3px;\n     color: black;\n     font-size: 2.5rem;\n     font-family: \"Solway\", serif;\n}\n\n.dataItem {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     justify-content: flex-start;\n}\n\n.temp {\n     display: inline-block;\n     margin-top: .5rem;\n     font-size: 5rem;\n     font-weight: 900;\n     color: rgb(0, 0, 0);\n}\n\n.dataGrid p.low {\n     color: rgb(0, 85, 0);\n}\n\n.dataGrid p.medium {\n     color: rgb(221, 133, 0);\n}\n\n.dataGrid p.high {\n     color: rgb(170, 0, 0);\n}\n\nfooter {\n     margin-top: .5rem;\n     text-align: center;\n}\n\nfooter p {\n     font-size: 1.4rem;\n}\n\n.photographer {\n     font-size: 1.4rem;\n}\n\n.degree {\n     color: rgb(0, 0, 65);\n     margin-left: 3px;\n     font-size: 4.8rem;\n}\n\n@media (max-width: 700px) {\n\n     h1 {\n          margin-top: 0rem;\n          font-size: 4rem;\n          font-family: \"Solway\", serif;\n      }\n\n      .container {\n           display: flex;\n           flex-direction: column;\n           margin-top: 0rem;\n           width: 100%;\n           height: 100vh;\n           padding: 1rem 1rem;\n      }\n\n      .weatherSearch label {\n          font-family: \"Solway\", serif;\n          margin-top: .5rem;\n          font-size: 3rem;\n     }\n\n     .weatherSearch input {\n          margin-top: 1.5rem;\n          padding: 8px 10px;\n          font-size: 1.8rem;\n     }\n\n      .cityData{\n           display: flex;\n           flex-direction: column;\n           justify-content: space-around;\n           align-items: center;\n           width: 100%;\n           margin-top: 1.5rem;\n           border-radius: 20px;    \n           padding: 1.5rem 1rem;\n           flex: 1 0 auto;\n      }\n\n      .cityData h1{\n           font-size: 3.5rem; \n      }\n\n     .dataGrid {\n          margin-top: 1rem;\n          grid-template-columns: 1fr 1fr;\n          grid-column-gap: .25rem;\n          grid-row-gap: 1rem;\n     }\n\n     .dataItem h3{\n          font-size: 2.25rem;\n     }\n\n     .temp {\n          margin-top: 0;\n          font-size: 3.5rem;\n     }\n\n     .icon {\n          display: none;\n     }\n\n} \n\n@media (max-width: 700px) and (min-height: 700px) {\n\n     h1{\n          font-size: 4.5rem;\n     }\n     .cityData h1{\n          font-size: 4.5rem; \n     }\n\n\n     .temp {\n\n          font-size: 4.25rem;\n     }\n\n     .dataGrid h3{\n          font-size: 2.5rem;\n     }\n     \n\n}\n\n@media (max-width: 700px) and (min-height: 800px) {\n\n\n     .temp {\n\n          font-size: 4.25rem;\n     }\n\n     .dataGrid h3{\n          font-size: 2.5rem;\n     }\n\n     .icon {\n          display: block;\n     }\n\n\n}", ""]);
+exports.push([module.i, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-size: 62.5%;\n}\n\nhtml,\nbody {\n    width: 100%;\n    flex-direction: column;\n    background-color: #d2eaf3;\n    font-family: \"Lato\", sans-serif;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat;\n    background-attachment: fixed;\n    background-position: 50% 65%;\n    background-size: auto 150%;\n}\n\nh1 {\n    margin-top: 1.5rem;\n    font-size: 7rem;\n    font-family: \"Solway\", serif;\n}\n\n.container {\n    text-align: center;\n    max-width: 80rem;\n    padding: 2rem 2rem 1rem;\n    margin: 3rem auto 0;\n}\n\n.weatherSearch {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n}\n\n.weatherSearch label {\n     font-family: \"Solway\", serif;\n     margin-top: 1.5rem;\n     font-size: 3.5rem;\n}\n\n.weatherSearch input {\n     margin-top: 1.5rem;\n     padding: 10px 12px;\n     font-size: 2rem;\n     border-radius: 5px;\n     border: 1px solid grey;\n     outline: none;\n     box-shadow: 0px 0px 2px 2px rgba(182, 182, 182, 0.226);\n}\n\n.weatherSearch button{\n     margin-top: 1.5rem;\n     padding: 8px 15px;\n     border-radius: 5px;\n     font-size: 2rem;\n     background-color: rgb(218, 218, 218);\n     border: 1px solid rgb(51, 51, 51);\n     outline: none;\n}\n\n.weatherSearch input:focus{\n     box-shadow: 0px 0px 2px 2px rgba(52, 134, 27, 0.527);\n}\n\n.cityData {\n     position: relative;\n     margin-top: 3rem;\n     border-radius: 20px;    \n     padding: 2rem 1rem;\n     background-color: rgba(255, 255, 255, 0.637);\n     z-index: 1;\n     text-shadow:\n     0px 0px 8px rgba(217, 234, 255, 0.822),\n     0px 0px 10px rgba(255, 255, 255, 0.74);\n}\n\n.cityDataBackground{\n     position: absolute;\n     top: 0;\n     left: 0;\n     height: 100%;\n     width: 100%;\n     content: \"\";\n     background-repeat: no-repeat;\n     background-position: center center;\n     opacity: 1;\n     z-index: -1;\n     border-radius: 20px;\n     border: 1px solid black;\n}\n\n.cityDataBackground:after{\n          position: absolute;\n          top: 0;\n          left: 0;\n          height: 100%;\n          width: 100%;\n          content: \"\";\n          background-color: rgb(151, 151, 151);\n          opacity: .3;\n          z-index: 0;\n          border-radius: 20px;\n}\n\nimg {\n     display: block;\n     margin: .5rem auto 0;\n     background-color: rgb(218, 218, 218);\n     border: 5px dashed grey;\n     border-radius: 5px;\n     box-sizing: border-box;\n}\n\n.cityData h1 {\n     margin: 0;\n     font-size: 5rem;\n}\n\n.cityData h2{\n     font-family: \"Solway\", serif;\n     font-weight: 400;\n     font-size: 3.2rem;\n}\n\n.dataGrid {\n     margin-top: 2rem;\n     display: grid;\n     grid-template-columns: 1fr 1fr 1fr;\n     grid-column-gap: 1rem;\n     grid-row-gap: 2rem;\n}\n\n.dataGrid h3 {\n     font-family: \"Solway\", serif;\n     font-size: 3rem;\n}\n\n.dataGrid p {\n     font-size: 3rem;\n     color: rgb(0, 0, 65);\n     font-weight: 600;\n}\n\n.dataGrid p .identifier{\n     margin-left: 3px;\n     color: black;\n     font-size: 2.5rem;\n     font-family: \"Solway\", serif;\n}\n\n.dataItem {\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     justify-content: flex-start;\n}\n\n.temp {\n     display: inline-block;\n     margin-top: 0;\n     font-size: 5rem;\n     font-weight: 900;\n     color: rgb(0, 0, 0);\n}\n\n.dataGrid p.low {\n     color: rgb(0, 85, 0);\n}\n\n.dataGrid p.medium {\n     color: rgb(221, 133, 0);\n}\n\n.dataGrid p.high {\n     color: rgb(170, 0, 0);\n}\n\nfooter {\n     margin-top: .5rem;\n     text-align: center;\n}\n\nfooter p {\n     font-size: 1.4rem;\n}\n\n.photographer {\n     font-size: 1.4rem;\n}\n\n.degree {\n     color: rgb(0, 0, 65);\n     margin-left: 3px;\n     font-size: 4.8rem;\n}\n\n.errorClass {\n     background-color: rgb(255, 151, 151);\n     font-size: 2rem;\n     width: 100%;\n     padding: 1rem;\n     position: fixed;\n     top: 0;\n     text-align: center;\n     z-index: 10;\n}\n\n@media (max-width: 700px) {\n\n     h1 {\n          margin-top: 0rem;\n          font-size: 4rem;\n          font-family: \"Solway\", serif;\n      }\n\n      .container {\n           display: flex;\n           flex-direction: column;\n           margin-top: 0rem;\n           width: 100%;\n           height: 100vh;\n           padding: 1rem 1rem;\n      }\n\n      .weatherSearch label {\n          font-family: \"Solway\", serif;\n          margin-top: .5rem;\n          font-size: 3rem;\n     }\n\n     .weatherSearch input {\n          margin-top: 1.5rem;\n          padding: 8px 10px;\n          font-size: 1.8rem;\n     }\n\n      .cityData{\n           display: flex;\n           flex-direction: column;\n           justify-content: space-around;\n           align-items: center;\n           width: 100%;\n           margin-top: 1.5rem;\n           border-radius: 20px;    \n           padding: 1.5rem 1rem;\n           flex: 1 0 auto;\n      }\n\n      .cityData h1{\n           font-size: 3.5rem; \n      }\n\n     .dataGrid {\n          margin-top: 1rem;\n          grid-template-columns: 1fr 1fr;\n          grid-column-gap: .25rem;\n          grid-row-gap: 1rem;\n     }\n\n     .dataItem h3{\n          font-size: 2.25rem;\n     }\n\n     .temp {\n          margin-top: 0;\n          font-size: 3.5rem;\n     }\n\n     .icon {\n          display: none;\n     }\n\n} \n\n@media (max-width: 700px) and (min-height: 800px) {\n\n\n     .temp {\n\n          font-size: 4.25rem;\n     }\n\n     .dataGrid h3{\n          font-size: 2.5rem;\n     }\n\n     .icon {\n          display: block;\n     }\n\n\n}\n\n\n@media (max-width: 900px) and (orientation: landscape) {\n\n\n     .container{\n          padding: 2rem;\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          box-sizing: border-box;\n     }\n\n     .title {\n          display: none;\n     }\n\n     .icon {\n          display: none;\n     }\n\n     label {\n          display: none;\n     }\n\n     .cityData{\n          display: grid;\n          grid-template-columns: 1fr 1fr;\n          margin: 0 auto;\n          order: 1;\n          flex-grow: 1;\n          height: 80vh;\n     }\n\n     .cityData h1 {\n          font-size: 4.25rem;\n     }\n\n     footer {\n          order: 2;\n     }\n     \n     .weatherSearch {\n          order: 3;\n     }\n\n     .searchDiv {\n          display: flex;\n          flex-direction: column;\n          justify-content: center;\n          align-items: center;\n     }\n\n     .dataItem {\n          display: flex;\n          flex-direction: column;\n          justify-content: center;\n     }\n\n     .dataGrid h3 {\n          font-size: 2.5rem;\n     }\n\n\n     .dataItem p {\n          font-size: 2.75rem;\n     }\n\n     .temp {\n          margin-top: 0;\n\n     }\n\n}\n\n@media (max-width: 600px) and (orientation: landscape) {\n\n     .cityData h1 {\n          font-size: 3.25rem;\n     }\n\n     .dataGrid h3 {\n          font-size: 2.1rem;\n     }\n\n     .dataItem p {\n          font-size: 2.5rem;\n     }\n}\n\n@media (min-height: 400px) and (orientation: landscape) {\n     .icon {\n          display: block;\n     }\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -566,7 +566,7 @@ class DOMHandler {
     div.className = "cityData";
     console.log(cityData.wind.deg);
     div.innerHTML = `
-    <div>
+    <div class="searchDiv">
     <h1>${cityData.name}, ${cityData.sys.country}</h1>
     <h2>Temperature</h2>
     <span class="temp">${_temperature_js__WEBPACK_IMPORTED_MODULE_0__["default"].convert(cityData.main.temp)}<span class="temp degree">°F</span></span>
@@ -600,8 +600,8 @@ class DOMHandler {
       </div>
       <div class="cityDataBackground">
       </div>`;
-    document.querySelector(".container").appendChild(div)
-    const footer = document.createElement("footer")
+    document.querySelector(".container").appendChild(div);
+    const footer = document.createElement("footer");
     footer.innerHTML = "<p>Image by <span class='photographer'>...</span>.</p>";
     document.querySelector(".container").appendChild(footer);
   }
@@ -610,6 +610,19 @@ class DOMHandler {
     const cityData = document.querySelector(".cityDataBackground");
     cityData.style.backgroundImage = `url(${source})`;
     document.querySelector(".photographer").textContent = photographer;
+  }
+
+  errorHandle(message) {
+    const existingDiv = document.querySelector(".errorClass");
+    if (existingDiv !== null) {
+      existingDiv.remove();
+    }
+    const body = document.querySelector("body");
+    const errorDiv = document.createElement("div");
+    errorDiv.textContent = message;
+    errorDiv.className = "errorClass";
+    body.appendChild(errorDiv);
+    setTimeout(() => errorDiv.remove(), 3000);
   }
 }
 
@@ -673,10 +686,14 @@ class EasyHTTP {
   // make an HTTP GET request
   httpGETCity(city) {
     return new Promise((resolve, reject) => {
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.appidWeather}`)
-        .then((res) => (res.ok ? res.json() : reject("error")))
+      let newCity = city;
+      if (city.includes(",")) {
+        newCity = city.split(",")[0];
+      }
+      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${this.appidWeather}`)
+        .then((res) => (res.ok ? res.json() : reject("Error! City was not found!")))
         .then((data) => resolve(data))
-        .catch((err) => reject(err));
+        .catch(() => reject("Error! City was not found!"));
     });
   }
 
@@ -694,9 +711,9 @@ class EasyHTTP {
           authorization: this.appidPicture
         }
       })
-        .then((res) => res.ok ? res.json() : reject("Picture not found!"))
+        .then((res) => (res.ok ? res.json() : reject("Picture not found!")))
         .then((data) => resolve(data))
-        .catch((err) => reject(err));
+        .catch(() => reject("Error! Picture did not load."));
     });
   }
 }
@@ -743,16 +760,14 @@ const input = document.querySelector("input");
 document.querySelector("button").addEventListener("click", () => {
   easyHTTP.httpGETCity(input.value)
     .then((data) => {
-      console.log(data);
       domHandler.createCityData(data);
       return easyHTTP.httpGETPicture(data.weather[0].main);
     })
     .then((data) => {
-      console.log(data);
       const photoNumber = Math.floor(Math.random() * (data.total_results < 15 ? data.total_results : 15));
       domHandler.createBackgroundPicture(data.photos[photoNumber].src.original, data.photos[photoNumber].photographer);
     })
-    .catch((err) => console.log(err));
+    .catch((err) => domHandler.errorHandle(err));
 });
 
 easyHTTP.httpGETCity("Anaheim")
