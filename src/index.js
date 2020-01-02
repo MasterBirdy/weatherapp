@@ -1,11 +1,12 @@
 import EasyHTTP from "./EasyHTTP";
 import DOMHandler from "./DOMHandler";
 import "./style.css";
-import Image from "./background.jpg";
+import "./background.jpg";
 
 const easyHTTP = new EasyHTTP();
 const domHandler = new DOMHandler();
 const input = document.querySelector("input");
+let randomData;
 
 document.querySelector("button").addEventListener("click", () => {
   easyHTTP.httpGETCity(input.value)
@@ -31,3 +32,11 @@ easyHTTP.httpGETCity("Anaheim")
     const photoNumber = Math.floor(Math.random() * (data.total_results < 15 ? data.total_results : 15));
     domHandler.createBackgroundPicture(data.photos[photoNumber].src.original, data.photos[photoNumber].photographer);
   });
+
+easyHTTP.httpGETJSON()
+  .then((data) => {
+    randomData = JSON.stringify(data);
+  })
+  .catch((err) => domHandler.errorHandle(err));
+
+console.log(randomData.length);

@@ -11,7 +11,8 @@ body {
     flex-direction: column;
     background-color: #d2eaf3;
     font-family: "Lato", sans-serif;
-    background: url("./background.jpg") no-repeat;
+    background: url("./background.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 65%;
     background-size: auto 150%;
@@ -42,6 +43,15 @@ h1 {
      font-size: 3.5rem;
 }
 
+.inline{
+     display: inline;
+}
+
+.inline button {
+     margin: 0 .75rem;
+}
+
+
 .weatherSearch input {
      margin-top: 1.5rem;
      padding: 10px 12px;
@@ -68,7 +78,7 @@ h1 {
 
 .cityData {
      position: relative;
-     margin-top: 3rem;
+     margin-top: 2rem;
      border-radius: 20px;    
      padding: 2rem 1rem;
      background-color: rgba(255, 255, 255, 0.637);
@@ -296,7 +306,7 @@ footer p {
 }
 
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 900px) and (min-height: 500px) and (orientation: landscape) {
 
 
      .container{
@@ -369,7 +379,7 @@ footer p {
 
 }
 
-@media (max-width: 600px) and (orientation: landscape) {
+@media (max-width: 600px) and (min-height: 500px) and (orientation: landscape) {
 
      .cityData h1 {
           font-size: 3.25rem;
@@ -389,3 +399,4 @@ footer p {
           display: block;
      }
 }
+
