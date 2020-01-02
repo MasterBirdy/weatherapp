@@ -851,7 +851,7 @@ class TimeFormatter {
     if (hours === 0) {
       return 12;
     }
-    if (hours > 13) {
+    if (hours >= 13) {
       return hours - 12;
     }
 
